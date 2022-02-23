@@ -7,9 +7,6 @@ export interface ButtonProps {
   children?: ReactNode;
 }
 
-/**
- * Primary UI component for user interaction
- */
 export const Button = (props: ButtonProps) => {
   return (
     <button type="button" className={styles.button} disabled={props.disabled}>
