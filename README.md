@@ -10,4 +10,6 @@ Todo:
  - Add sass
  - move over components
  - Add tests
+ - Add styled components (or similar)
+ - Add linting
  

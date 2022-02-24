@@ -1,4 +1,5 @@
-import { ReactNode } from "react";
+import { useContext, ReactNode } from "react";
+import { ThemeContext } from "../Theme";
 import styles from "./Button.module.scss";
 
 export interface ButtonProps {
@@ -9,14 +10,16 @@ export interface ButtonProps {
 }
 
 export const Button = (props: ButtonProps) => {
+  const theme = useContext(ThemeContext);
   return (
     <button
       type="button"
       className={styles.button}
       disabled={props.disabled}
       style={{
-        backgroundColor: props.backgroundColor,
-        borderColor: props.backgroundColor,
+        backgroundColor: theme.colors.accent,
+        borderColor: theme.colors.accent,
+        fontFamily: theme.fonts.primary,
       }}
     >
       {props.children}
