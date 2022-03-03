@@ -12,9 +12,14 @@ const defaultValue: Theme = {
     success: "",
     error: "",
     warning: "",
+    background: "",
+    backgroundSecondary: "",
   },
   fonts: {
     primary: "sans-serif",
+  },
+  lighting: {
+    shadow100: "",
   },
 };
 

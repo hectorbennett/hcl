@@ -12,4 +12,7 @@ Todo:
  - Add tests
  - Add styled components (or similar)
  - Add linting
+ - Add 'animate in/out' component
+ - Add themeing, similar to BaseWeb
+ - member-ordering https://typescript-eslint.io/rules/member-ordering/
  

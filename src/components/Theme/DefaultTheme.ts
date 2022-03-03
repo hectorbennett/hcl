@@ -11,8 +11,13 @@ export const DefaultTheme: Theme = {
     error: "red",
     warning: "yellow",
     success: "green",
+    background: "white",
+    backgroundSecondary: "grey",
   },
   fonts: {
     primary: "Verdana",
+  },
+  lighting: {
+    shadow100: "0 2px 10px 0 rgb(0 0 0 / 20%)",
   },
 };

@@ -8,13 +8,20 @@ interface Colors {
   success: string;
   error: string;
   warning: string;
+  background: string;
+  backgroundSecondary: string;
 }
 
 interface Fonts {
-    primary: string;
+  primary: string;
+}
+
+interface Lighting {
+  shadow100: string;
 }
 
 export interface Theme {
   colors: Colors;
   fonts: Fonts;
+  lighting: Lighting;
 }
