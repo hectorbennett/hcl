@@ -2,11 +2,8 @@ import { useContext } from "react";
 import { styled } from "styletron-react";
 import { ThemeContext } from "../Theme";
 
-export interface CardProps {
-  children: React.ReactNode;
-}
 
-export const Card = (props: CardProps) => {
+export const Card = (props: object) => {
   const theme = useContext(ThemeContext);
 
   const StyledDiv = styled("div", {
@@ -18,3 +15,16 @@ export const Card = (props: CardProps) => {
 
   return <StyledDiv {...props} />;
 };
+
+
+
+export const CardBody = (props: object) => {
+  const theme = useContext(ThemeContext);
+
+  const StyledDiv = styled("div", {
+    padding: '1.25rem',
+    fontFamily: theme.fonts.primary,
+  });
+
+  return <StyledDiv {...props} />;
+}

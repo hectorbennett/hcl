@@ -12,7 +12,7 @@ export const DefaultTheme: Theme = {
     warning: "yellow",
     success: "green",
     background: "white",
-    backgroundSecondary: "grey",
+    backgroundSecondary: 'hsl(0, 0%, 98%)',
   },
   fonts: {
     primary: "Verdana",
