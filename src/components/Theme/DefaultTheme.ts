@@ -59,6 +59,8 @@ export const DefaultTheme: Theme = {
     get cardBorder() {
       return this.cardBackground;
     },
+    background: "white",
+    backgroundSecondary: 'hsl(0, 0%, 98%)',
   },
   fonts: {
     primary: "Verdana",
