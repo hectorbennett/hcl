@@ -24,12 +24,19 @@ export const Button = (props: ButtonProps) => {
     borderRadius: "5px",
     color: "white",
     cursor: "pointer",
-    border: `1px solid ${theme.colors.accent}`,
     fontFamily: theme.fonts.primary,
+    color: theme.colors.accentText,
+    border: `1px solid ${theme.colors.accent}`,
     backgroundColor: theme.colors.accent,
+    borderBottom: `2px solid ${theme.colors.accent300}`,
+    opacity: 0.9,
+    transition: "opacity 0.2s ease-in",
     ":disabled": {
       cursor: "default",
       opacity: 0.5,
+    },
+    ":hover": {
+      opacity: 1,
     },
   });
   return (
